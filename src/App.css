@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+
+/* Header CSS */
+
+.header-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  background-color: #0b1a72;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 24px;
+  color: #FFF;
+  padding: 0px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  padding: 20px;
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.left-button {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.right-button {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+h2 {
+  color: #0b1a72;
+}
+
+.tasks {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.left-tasks {
+  /* background-color: aquamarine; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 5px;
+}
+
+.right-tasks {
+  /* background-color: burlywood; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 5px;
+}
+
+.card {
+  width: 30%;
+  margin: 5px;
+}
+
+p {
+  min-height: 150px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.task-form {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+option.option1 {
+  background-color: #aed143;
+}
+
+option.option2 {
+  background-color: #fbd249;
+}
+
+option.option3 {
+  background-color: #f49f3f;
+}
+
+option.option4 {
+  background-color: #d35595;
+}
+
+option.option5 {
+  background-color: #51bcb3;
+}
+
+
+
+
+
+
+
+/* Dashboard CSS */
+
+.dashboard {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.graph-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  border:1px solid black;
+  margin-bottom: 20px;
+}
+
+/* MessageFields CSS */
+
+.message-top-container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.body-title {
+  font-size: 24px;
+  color: #0b1a72;
+}
+
+.message-filter-container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-filter-item {
+  width: 100%
+}
+
+select {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 4px;
+  height: 38px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 4px;
+  height: 34px;
+}
+
+.message-body-container {
+  width: 60%;
+  margin: auto;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+/* MessageList CSS */
+
+#message-list-table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#message-list-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0b1a72;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#message-list-table td, #message-list-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#message-list-table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
+
+#message-list-table tr:hover {
+  background-color: #ddd;
+}
+
+
+/* General CSS */
+
+button {
+  border: 0;
+  background-color: #0b1a72;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: bold;
+  margin-left: 15px;
+  gap: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #061257;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
